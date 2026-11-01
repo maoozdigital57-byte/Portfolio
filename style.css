@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to left,#fff 75%,#c3f5ff 25%);
+
+}
+img{
+    display: flex;
+
+    width: 200px;
+    height: 200px;
+}
+.navsection{
+width: 100%;height: 20vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-image: linear-gradient(to top,#fff 80%,#c3f5ff 20%);
+
+}
+.logo{
+    width:40%;
+    color:white;
+    background-image: linear-gradient(#8d98e3 40%,#854fee 60%) ;
+    padding-left: 100px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 80px #4458dc;
+}
+.logo h5{
+    text-transform: uppercase;
+    font-size:1.6rem;
+    animation: animate 2s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes animate{
+from{
+    padding-left:40px;
+    color: #000;
+}
+to{
+    padding-right:40px;
+    color: #fff;
+}
+}
+nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#000;
+    font-weight: 900;
+    font-size: 17px;
+    position: relative;
+}
+nav a:first-child{
+    color:#4458dc
+}
+nav a:before{
+    content:"";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    border-bottom: 2px solid #4458dc;
+}
+nav a:hover:before{
+    width: 100%;
+}
+main{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+img{
+    display: flex;
+    width: 400px;
+    height: 800px;
+}
+.rightside{
+    background-color: #e0f7ff;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    padding: 20px;
+}
+.rightside img{
+    display: block;
+    max-width: 400px;
+    height: auto;
+    mix-blend-mode: multiply;
+}
+.leftside{
+    color: #000;
+    text-transform: uppercase;
+}
+.leftside h3{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    left: 20px;
+}
+.leftside h3:after:hover{
+    content: "";
+    position: absolute;
+    top: 43px;
+    left:24.5%;
+    width: 450px;
+    height: 3px;
+    background-color: #000;
+}
+.leftside h1{
+    margin-top: 20px;
+    
+}
+.leftside h2{
+    margin-bottom: 20px;
+    font-weight: 100;
+    word-spacing: 5px;
+}
+.leftside a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
+    font-weight: 900;
+    font-size: 17px;
+    position: relative;
+    margin-right: 40px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4458dc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.leftside a:hover{
+    background-color: darkblue;
+    animation: animates 2s linear infinite;
+    color:Aqua;
+
+}
+@keyframes animates{
+from{
+    background-color: orange;
+    box-shadow: 0px 10px 30px orange;
+    rotate: 360deg;
+}
+to{
+    background-color: darkblue;
+    box-shadow: 0px 10px 30px aquamarine;
+    rotate: 0deg;
+}
+}
